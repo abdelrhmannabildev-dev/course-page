@@ -281,6 +281,11 @@ textarea {
 button {
     grid-column: span 2;
 }
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
 
 button {
     padding: 14px;
@@ -368,6 +373,7 @@ footer {
     border: 1px solid var(--accent-bright);
     box-shadow: 0 0 0 2px rgba(175, 175, 175, 0.2);
 }
+
 /* ========== TABLE ========== */
 .table-container {
     width: 100%;
@@ -415,6 +421,3 @@ tbody tr:hover {
     transition: 0.3s;
 }
 
-input[type="number"]::-webkit-scrollbar {
-    display: none;
-}

@@ -234,13 +234,14 @@ main section a:hover {
 
 form {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 20px;
 }
 
 .form-group {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .form-group label {
@@ -274,13 +275,7 @@ textarea {
     height: 80px;
 }
 
-/* Layout control */
-.form-group:nth-child(1),
-.form-group:nth-child(3),
-.form-group:nth-child(5),
-button {
-    grid-column: span 2;
-}
+/* Remove number input spinners */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;

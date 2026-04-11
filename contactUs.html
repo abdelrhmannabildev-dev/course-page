@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">
+            <img src="imgs/logo.png" alt="logo">
+        </a>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <ul>
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="my_courses.html">My Courses</a></li>
+            <li><a href="add_course.html">Add Course</a></li>
+            <li><a href="contactUs.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>Contact Us</h1>
+            <p>If you have any questions, feedback, or need assistance, please don't hesitate to reach out to us. We're here to help!</p>
+
+            <div class="contact-info">
+                <p><strong>Email:</strong> info@cms.com</p>
+                <p><strong>Phone:</strong> +20 123 456 789</p>
+            </div>
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <div class="form-container">
+            <form>
+                <div class="form-group">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea placeholder="Enter your message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        </section>
+    </main>
+
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-info">
+                <h3>Course Management System</h3>
+                <p>Email: info@cms.com | Phone: +20 123 456 789</p>
+                <p>© 2026 CMS. All rights reserved.</p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="my_courses.html">My Courses</a></li>
+                    <li><a href="add_course.html">Add Course</a></li>
+                    <li><a href="contactUs.html">Contact Us</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><img src="imgs/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="imgs/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="imgs/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="hamburger.js"></script>
+
+</body>
+</html>

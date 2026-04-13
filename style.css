@@ -7,6 +7,7 @@
     --neutral-white: #F5F5F5;
     
     /* Accent */
+    --accent-dark:#202934;
     --accent: #AFAFAF;
     --accent-bright: #CFCFCF;
 
@@ -27,7 +28,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--neutral-white);
-    background-color: var(--neutral-dark-gray);
+    background:
+        linear-gradient(rgba(146, 146, 146, 0.6), rgba(50, 50, 50, 0.8),rgba(146, 146, 146, 0.6)),
+        url('imgs/background.avif') no-repeat top center;
+    background-size: cover;
 
     min-height: 100vh;
     display: flex;
@@ -44,19 +48,20 @@ main {
     text-align: center;
     padding: 10px 0;
 
-    background:
-        linear-gradient(rgba(30, 30, 30, 0.6), rgba(50, 50, 50, 0.8)),
-        url('imgs/background.avif') no-repeat top center;
-    background-size: cover;
-    background-color: var(--primary-light);
+    /* background-color: var(--primary-light); */
 }
 
 /* ========== NAVBAR ========== */
 nav {
     display: flex;
+    position: relative; 
+
     justify-content: space-between;
     align-items: center;
-    background-color: var(--primary-dark);
+    width: 80vw;
+    margin: 2vh auto;
+    background-color:var(--primary-dark) ;
+    border-radius: 30px;
     padding: 15px clamp(15px, 5vw, 40px);
 }
 
@@ -128,7 +133,7 @@ nav a.active {
 @media (max-width: 768px) {
     nav ul {
         position: absolute;
-        top: 70px;
+        top: 100%;
         right: 0;
 
         display: flex;
@@ -138,10 +143,10 @@ nav a.active {
         gap: 0;
 
         background-color: var(--primary);
-        border-radius: 10px;
-        z-index: 1000;
+        border-radius: 0 0 15px 15px;
+        z-index: 10;
 
-        transform: translateY(-20px);
+        transform: translateY(-10px);
         opacity: 0;
         pointer-events: none;
         transition: all 0.4s ease;
@@ -370,17 +375,22 @@ footer {
     width: 100%;
     overflow-x: auto;
     margin: 30px 0;
+    transition: .5s;
 }
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+
+    width: 80%;
+    margin:auto;
+    border-width: 0px;
     background: rgba(40, 40, 40, 0.9);
     border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 20px rgba(17, 17, 17, 0.5);
 }
-
+.table-container:hover{
+    transform: translateY(-10px);
+}
 thead {
     background-color: var(--primary-light);
 }
